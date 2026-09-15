@@ -1,2 +1,35 @@
 # Dental-risk-ml
 First ML portfolio project — dental/health risk prediction (public toy data)
+# Dental-risk-ml
+
+First machine-learning portfolio project: predict a simple health/dental-related risk label from **public toy tabular data** (no real patient or military records).
+
+Built as a learning project while studying computer science part-time. Focus: clean workflow, honest metrics, and clear use of AI assistants as tools.
+
+## Goal
+Train a baseline classifier (scikit-learn) that separates higher vs lower risk examples, then document accuracy, confusion matrix, and limits of the model.
+
+## Repo layout
+- `data/` — public CSV only (source cited in this README)
+- `notebooks/` — exploration (`01_eda.ipynb`)
+- `src/` — load → train → evaluate scripts
+- `models/` — saved model artifacts (optional)
+
+## Stack
+Python 3 · pandas · scikit-learn · Jupyter
+
+## How I used AI tools
+- **Claude** — help draft the sklearn pipeline and train/test split
+- **ChatGPT** — polish wording in docs
+- **Carl (Grok Bot)** — project scope, repo structure, review for overclaims / data leakage
+I still choose the problem, check every metric, and own the commits.
+
+## Status
+Scaffold only — dataset + first model coming next.
+
+## Run (later)
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+jupyter notebook notebooks/01_eda.ipynb
