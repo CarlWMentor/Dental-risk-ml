@@ -33,3 +33,9 @@ python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 jupyter notebook notebooks/01_eda.ipynb
+
+## Data
+
+This project uses the Cleveland subset of the UCI Heart Disease dataset (Janosi et al., 1989), available at https://archive.ics.uci.edu/dataset/45/heart+disease.
+
+Janosi, A., Steinbrunn, W., Pfisterer, M. and Detrano, R. 1989. *Heart Disease* [Dataset]. UCI Machine Learning Repository. DOI: https://doi.org/10.24432/C52P4X
