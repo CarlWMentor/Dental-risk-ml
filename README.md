@@ -28,7 +28,8 @@ Python 3 · pandas · scikit-learn · Jupyter
 I still choose the problem, check every metric, and own the commits.
 
 ## Status
-Scaffold only — dataset + first model coming next.
+Baseline done — notebook EDA + src/train.py logistic regression (~83% test accuracy on cleaned UCI Cleveland data).
+
 
 ## Run (later)
 ```bash
