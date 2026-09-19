@@ -14,6 +14,9 @@ Train a baseline classifier (scikit-learn) that separates higher vs lower risk e
 - `notebooks/` — exploration (`01_eda.ipynb`)
 - `src/` — load → train → evaluate scripts
 - `models/` — saved model artifacts (optional)
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
+
+Attach files by dragging & dropping, selecting or pasting them.
 
 ## Stack
 Python 3 · pandas · scikit-learn · Jupyter
@@ -39,3 +42,10 @@ jupyter notebook notebooks/01_eda.ipynb
 This project uses the Cleveland subset of the UCI Heart Disease dataset (Janosi et al., 1989), available at https://archive.ics.uci.edu/dataset/45/heart+disease.
 
 Janosi, A., Steinbrunn, W., Pfisterer, M. and Detrano, R. 1989. *Heart Disease* [Dataset]. UCI Machine Learning Repository. DOI: https://doi.org/10.24432/C52P4X
+
+## Results (baseline)
+- Cleaned missing `?` values → 297 rows
+- Binary `risk` label from original `target` (0 vs 1–4)
+- Model: LogisticRegression, 80/20 stratified split
+- Test accuracy ≈ 0.83
+- This is a learning project on public data, not a clinical tool
